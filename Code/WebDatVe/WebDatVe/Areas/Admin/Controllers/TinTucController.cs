@@ -40,18 +40,18 @@ namespace WebDatVe.Areas.Admin.Controllers
                         model.NgayTao = DateTime.Now;
                         Db.TinTucs.Add(model);
                         Db.SaveChanges();
-                        TempData["notice"] = "Thêm thành công!";
+                        TempData["notice"] = "New added success!";
 
                         return RedirectToAction("Index");
                     }
                     else
                     {
-                        TempData["notice"] = "Tiêu đề đã tồn tại! Vui lòng chọn tên khác!";
+                        TempData["notice"] = "Title already exists! Please choose another name!";
                     }
                 }
                 catch
                 {
-                    TempData["notice"] = "Thêm không thành công!";
+                    TempData["notice"] = "Add failed!";
                 }
             }
 
@@ -71,7 +71,7 @@ namespace WebDatVe.Areas.Admin.Controllers
             }
             catch
             {
-                TempData["notice"] = "Dữ liệu không tồn tại!";
+                TempData["notice"] = "Data does not exist!";
                 return RedirectToAction("Index");
             }
         }
@@ -96,18 +96,18 @@ namespace WebDatVe.Areas.Admin.Controllers
                         Db.TinTucs.Attach(obj);
                         Db.Entry(obj).State = EntityState.Modified;
                         Db.SaveChanges();
-                        TempData["notice"] = "Sửa thành công!";
+                        TempData["notice"] = "Repair success!";
 
                         return RedirectToAction("Index");
                     }
                     else
                     {
-                        TempData["notice"] = "Tiêu đề đã tồn tại! Vui lòng chọn tên khác!";
+                        TempData["notice"] = "Title already exists! Please choose another name!";
                     }
                 }
                 catch
                 {
-                    TempData["notice"] = "Sửa không thành công!";
+                    TempData["notice"] = "Repair failed!";
                 }
             }
             return View(model);
@@ -122,11 +122,11 @@ namespace WebDatVe.Areas.Admin.Controllers
                 Db.Entry(model).State = EntityState.Deleted;
                 Db.TinTucs.Remove(model);
                 Db.SaveChanges();
-                TempData["notice"] = "Xóa thành công!";
+                TempData["notice"] = "Delete successfully!";
             }
             catch
             {
-                TempData["notice"] = "Xóa không thành công! Nguyên nhân: Có ràng buộc cơ sở dữ liệu!";
+                TempData["notice"] = "Cause: There is a database constraint!";
             }
 
             return RedirectToAction("Index");

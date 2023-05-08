@@ -28,7 +28,7 @@
 
     <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
 
-    <title>Boleto  - Website đặt vé xem phim</title>
+    <title>Boleto - Movie ticket booking website</title>
 
 
 </head>
@@ -61,30 +61,30 @@
                 </div>
                 <ul class="menu">
                     <li>
-                        <a href="/" class="@ViewBag.Home">Trang chủ</a>
+                        <a href="/" class="@ViewBag.Home">Home page</a>
                     </li>
                     <li>
-                        <a href="/movies" class="@ViewBag.Movies">Phim</a>
+                        <a href="/movies" class="@ViewBag.Movies">Movies</a>
                     </li>
                     <li>
-                        <a href="/cinema" class="@ViewBag.Cinema">Rạp chiếu</a>
+                        <a href="/cinema" class="@ViewBag.Cinema">Cinema</a>
                     </li>
                     <li>
-                        <a href="/news" class="@ViewBag.News">Tin tức</a>
+                        <a href="/news" class="@ViewBag.News">News</a>
                     </li>
                     <li>
-                        <a href="/home/contact" class="@ViewBag.Contact">Liên hệ</a>
+                        <a href="/home/contact" class="@ViewBag.Contact">Contact</a>
                     </li>
                     @if (string.IsNullOrEmpty(tenkhach))
                     {
                         <li class="header-button pr-0">
-                            <a href="javascript:;">Đăng nhập</a>
+                            <a href="javascript:;">Log in</a>
                             <ul class="submenu">
                                 <li>
-                                    <a href="/account/login" style="border-radius: 0; background:none;">Khách hàng</a>
+                                    <a href="/account/login" style="border-radius: 0; background:none;">Customer</a>
                                 </li>
                                 <li>
-                                    <a href="/admin/dangnhap" style="border-radius: 0; background:none;">Quản trị</a>
+                                    <a href="/admin/dangnhap" style="border-radius: 0; background:none;">Admin</a>
                                 </li>
                             </ul>
                         </li>
@@ -92,13 +92,13 @@
                     else
                     {
                         <li class="header-button pr-0">
-                            <a href="javascript:;">Xin chào: @Server.UrlDecode(tenkhach)</a>
+                            <a href="javascript:;">Hello: @Server.UrlDecode(tenkhach)</a>
                             <ul class="submenu">
                                 <li>
-                                    <a href="/account" style="border-radius: 0; background:none;">Tài khoản</a>
+                                    <a href="/account" style="border-radius: 0; background:none;">Account</a>
                                 </li>
                                 <li>
-                                    <a href="/account/logout" style="border-radius: 0; background:none;">Thoát</a>
+                                    <a href="/account/logout" style="border-radius: 0; background:none;">Exit</a>
                                 </li>
                             </ul>
                         </li>
@@ -153,18 +153,15 @@
             </div>
             <div class="footer-bottom">
                 <div class="footer-bottom-area">
-                    <div class="left">
-                        <p>Copyright © 2023.All Rights Reserved By <a href="/">Boleto </a></p>
-                    </div>
                     <ul class="links">
                         <li>
-                            <a href="/home/about">Giới thiệu</a>
+                            <a href="/home/about">Introduce</a>
                         </li>
                         <li>
-                            <a href="/home/termsofuse">Điều khoản sử dụng</a>
+                            <a href="/home/termsofuse">Terms of use</a>
                         </li>
                         <li>
-                            <a href="/home/privacypolicy">Chính sách bảo mật</a>
+                            <a href="/home/privacypolicy">Privacy Policy</a>
                         </li>
                     </ul>
                 </div>

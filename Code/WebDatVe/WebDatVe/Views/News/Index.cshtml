@@ -15,15 +15,15 @@
 <section class="main-page-header speaker-banner bg_img" data-background="/assets/images/banner/banner07.jpg">
     <div class="container">
         <div class="speaker-banner-content">
-            <h2 class="title">Tin tức</h2>
+            <h2 class="title">News</h2>
             <ul class="breadcrumb">
                 <li>
                     <a href="/">
-                        Trang chủ
+                        Home Page
                     </a>
                 </li>
                 <li>
-                    Tin tức
+                    News
                 </li>
             </ul>
         </div>
@@ -37,7 +37,7 @@
             <div class="col-lg-9 mb-50 mb-lg-0">
                 @if (Model == null || Model.Count == 0)
                 {
-                    <p>Không có dữ liệu hiển thị</p>
+                    <p>No data displayed!</p>
                 }
                 else
                 {
@@ -64,7 +64,7 @@
                                     <div class="entry-content">
                                         <div class="left">
                                             <span class="date">@item.NgayTao.ToString("dd/MM/yyyy") </span>
-                                            <a href="/news/detail/@item.MaTinTuc" class="buttons">Đọc thêm <i class="flaticon-right"></i></a>
+                                            <a href="/news/detail/@item.MaTinTuc" class="buttons">Read more <i class="flaticon-right"></i></a>
                                         </div>
                                     </div>
                                 </div>

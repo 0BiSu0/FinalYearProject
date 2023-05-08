@@ -14,17 +14,17 @@
                     <ul>
                         <li>
                             <a href="/account">
-                                <span>Tài khoản</span>
+                                <span>Account</span>
                             </a>
                         </li>
                         <li style="font-weight:bold;">
                             <a href="/account/order">
-                                <span style="color: chocolate;">Đơn hàng</span>
+                                <span style="color: chocolate;">Order</span>
                             </a>
                         </li>
                         <li>
                             <a href="/account/logout">
-                                <span>Thoát</span>
+                                <span>Exit</span>
                             </a>
                         </li>
                     </ul>
@@ -36,7 +36,7 @@
                         <div class="filter-main">
                             <div class="left w-100 justify-content-between">
                                 <div class="item">
-                                    <h5>Vé đã đặt</h5>
+                                    <h5>Tickets booked</h5>
                                 </div>
                             </div>
                         </div>
@@ -44,7 +44,7 @@
                     <div class="row justify-content-center">
                         @if (Model == null || Model.Count == 0)
                         {
-                            <p>Không có dữ liệu để hiển thị!</p>
+                            <p>No data to display!</p>
                         }
                         else
                         {
@@ -66,7 +66,7 @@
                                                 <a href="/account/orderdetail/@item.MaDonHang">@item.ChiTietDonHangs.FirstOrDefault().XuatChieu.LichChieu.Phim.TenPhim</a>
                                             </h5>
                                             <div class="movie-rating-percent">
-                                                <span>Rạp: @item.ChiTietDonHangs.FirstOrDefault().XuatChieu.LichChieu.Rap.TenRap - @item.ChiTietDonHangs.FirstOrDefault().XuatChieu.GioChieu.ToString("00"):@item.ChiTietDonHangs.FirstOrDefault().XuatChieu.PhutChieu.ToString("00")</span>
+                                                <span>Cinema: @item.ChiTietDonHangs.FirstOrDefault().XuatChieu.LichChieu.Rap.TenRap - @item.ChiTietDonHangs.FirstOrDefault().XuatChieu.GioChieu.ToString("00"):@item.ChiTietDonHangs.FirstOrDefault().XuatChieu.PhutChieu.ToString("00")</span>
                                             </div>
                                         </div>
                                     </div>

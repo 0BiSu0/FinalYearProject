@@ -28,7 +28,7 @@
         <div class="page-title-area">
             <div class="item md-order-1">
                 <a href="/booking?movies=@ViewBag.movies&cinema=@ViewBag.cinema" class="custom-button back-button">
-                    <i class="flaticon-double-right-arrows-angles"></i>Quay lại
+                    <i class="flaticon-double-right-arrows-angles"></i>Come back
                 </a>
             </div>
             <div class="item date-item">
@@ -39,7 +39,7 @@
             </div>
             <div class="item">
                 <h5 class="title">05:00</h5>
-                <p>Thời gian hết hạn</p>
+                <p>Expired time</p>
             </div>
         </div>
     </div>
@@ -139,11 +139,11 @@
         <div class="proceed-book bg_img" data-background="/assets/images/movie/movie-bg-proceed.jpg">
             <div class="proceed-to-book">
                 <div class="book-item">
-                    <span>Bạn Đã Chọn Chỗ Ngồi</span>
+                    <span>You Have Chosen Your Seat</span>
                     <h3 class="title" id="dstenghe"></h3>
                 </div>
                 <div class="book-item">
-                    <span>Tổng tiền</span>
+                    <span>Total amount</span>
                     <h3 class="title" id="httien">0 đ</h3>
                 </div>
                 <div class="book-item">
@@ -152,7 +152,7 @@
                         <input type="hidden" name="cinema" value="@ViewBag.cinema" />
                         <input type="hidden" name="screen" value="@Model.MaXuatChieu" />
                         <input type="hidden" name="place" value="" id="dsghe" />
-                        <a href="javascript:;" class="custom-button" onclick="xacnhan();">Xác nhận</a>
+                        <a href="javascript:;" class="custom-button" onclick="xacnhan();">Confirm</a>
                         <button type="submit" id="xacnhan" style="opacity:0; display: none;"></button>
                     </form>
                 </div>

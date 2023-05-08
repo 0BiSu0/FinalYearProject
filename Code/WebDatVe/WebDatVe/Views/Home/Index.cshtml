@@ -15,12 +15,12 @@
     <div class="container">
         <div class="banner-content">
             <h1 class="title  cd-headline clip">
-                <span class="d-block">Đặt vé xem phim</span> ngay
+                <span class="d-block">Book movie tickets</span> today
                 <span class="color-theme cd-words-wrapper p-0 m-0">
-                    <b class="is-visible">Hôm nay</b>
+                    <b class="is-visible">Now</b>
                 </span>
             </h1>
-            <p>Đặt vé an toàn, bảo mật, đáng tin cậy!</p>
+            <p>Safe, secure, reliable ticket booking!</p>
         </div>
     </div>
 </section>
@@ -32,8 +32,8 @@
             <div class="row align-items-center mb--20">
                 <div class="col-lg-6 mb-20">
                     <div class="search-ticket-header">
-                        <h6 class="category">Xin chào đến với Boleto </h6>
-                        <h3 class="title">Bạn đang tìm kiếm</h3>
+                        <h6 class="category">Welcome to Boleto</h6>
+                        <h3 class="title">You are finding</h3>
                     </div>
                 </div>
                 <div class="col-lg-6 mb-20 ">
@@ -42,7 +42,7 @@
                             <div class="tab-thumb">
                                 <img src="/assets/images/ticket/ticket-tab01.png" alt="ticket">
                             </div>
-                            <span>Phim</span>
+                            <span>Movie</span>
                         </li>
                     </ul>
                 </div>
@@ -58,9 +58,9 @@
                             <div class="thumb">
                                 <img src="/assets/images/ticket/city.png" alt="ticket">
                             </div>
-                            <span class="type">Thể loại</span>
+                            <span class="type">Category</span>
                             <select name="category" class="select-bar" onchange='this.form.submit();'>
-                                <option value="0">Tất cả</option>
+                                <option value="0">All</option>
                                 @foreach (var item in theloais)
                                 {
                                     <option value="@item.MaTheLoai">@item.TenTheLoai</option>
@@ -71,7 +71,7 @@
                             <div class="thumb">
                                 <img src="/assets/images/ticket/cinema.png" alt="ticket">
                             </div>
-                            <span class="type">Rạp</span>
+                            <span class="type">Cinema</span>
                             <select name="cinema" class="select-bar" onchange='this.form.submit();'>
                                 @foreach (var item in raps)
                                 {
@@ -92,15 +92,15 @@
         <div class="tab">
             <div class="section-header-2">
                 <div class="left">
-                    <h2 class="title">Phim</h2>
-                    <p>Hãy chắc chắn không bỏ lỡ những bộ phim ngày hôm nay.</p>
+                    <h2 class="title">Movie</h2>
+                    <p>Be sure not to miss today's movies.</p>
                 </div>
                 <ul class="tab-menu">
                     <li class="active">
-                        Đang chiếu
+                        Now showing
                     </li>
                     <li>
-                        Sắp khởi chiếu
+                        Coming soon!
                     </li>
                 </ul>
             </div>
@@ -158,12 +158,12 @@
         <div class="tab">
             <div class="section-header-2">
                 <div class="left">
-                    <h2 class="title">Tin tức</h2>
-                    <p>Đừng bỏ lỡ sự kiện hôm nay.</p>
+                    <h2 class="title">News</h2>
+                    <p>Don't miss today's event.</p>
                 </div>
                 <ul class="tab-menu">
                     <li class="active">
-                        Đang diễn ra
+                        Happenning
                     </li>
                 </ul>
             </div>

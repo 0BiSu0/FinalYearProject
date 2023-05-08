@@ -45,7 +45,7 @@
                 <div class="thumb">
                     <img src="/assets/images/ticket/cinema.png" alt="ticket">
                 </div>
-                <span class="type">cinema</span>
+                <span class="type">Cinema</span>
                 <select name="cinema" class="select-bar" onchange='if(this.value != 0) { this.form.submit(); }'>
                     @foreach (var item in raps)
                     {
@@ -71,7 +71,7 @@
             <div class="col-lg-9 mb-5 mb-lg-0">
                 @if (lichChieu == null || lichChieu.Count == 0)
                 {
-                    <p>Không lịch chiếu phim nào để hiển thị!</p>
+                    <p>KNo showtimes to show!</p>
                 }
                 else
                 {

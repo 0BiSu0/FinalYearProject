@@ -22,9 +22,9 @@
     <div class="banner-bg bg_img bg-fixed" data-background="/assets/images/banner/banner02.jpg"></div>
     <div class="container">
         <div class="banner-content">
-            <h1 class="title bold">nhận <span class="color-theme">vé</span> xem phim</h1>
+            <h1 class="title bold">receive <span class="color-theme">ticket</span> watch a movie</h1>
             <p>
-                Mua vé xem phim trước, tìm thời gian chiếu phim, xem đoạn giới thiệu, đọc các bài phê bình phim và hơn thế nữa
+                Buy movie tickets in advance, find movie times, watch trailers, read movie reviews and more!!!
             </p>
         </div>
     </div>
@@ -37,8 +37,8 @@
             <div class="row align-items-center mb--20">
                 <div class="col-lg-6 mb-20">
                     <div class="search-ticket-header">
-                        <h6 class="category">Xin chào đến với Boleto </h6>
-                        <h3 class="title">Bạn đang tìm kiếm</h3>
+                        <h6 class="category">Welcome to Boleto </h6>
+                        <h3 class="title">You are finding</h3>
                     </div>
                 </div>
                 <div class="col-lg-6 mb-20 ">
@@ -47,7 +47,7 @@
                             <div class="tab-thumb">
                                 <img src="/assets/images/ticket/ticket-tab01.png" alt="ticket">
                             </div>
-                            <span>Phim</span>
+                            <span>Movie</span>
                         </li>
                     </ul>
                 </div>
@@ -63,9 +63,9 @@
                             <div class="thumb">
                                 <img src="/assets/images/ticket/city.png" alt="ticket">
                             </div>
-                            <span class="type">Thể loại</span>
+                            <span class="type">Category</span>
                             <select name="category" class="select-bar" onchange='this.form.submit();'>
-                                <option value="0">Tất cả</option>
+                                <option value="0">All</option>
                                 @foreach (var item in theloais)
                                 {
                                     if (item.MaTheLoai == category)
@@ -83,7 +83,7 @@
                             <div class="thumb">
                                 <img src="/assets/images/ticket/cinema.png" alt="ticket">
                             </div>
-                            <span class="type">Rạp</span>
+                            <span class="type">Cinema</span>
                             <select name="cinema" class="select-bar" onchange='this.form.submit();'>
                                 @foreach (var item in raps)
                                 {
@@ -104,6 +104,7 @@
         </div>
     </div>
 </section>
+
 <!-- ==========Ticket-Search========== -->
 <!-- ==========Movie-Section========== -->
 <section class="movie-section padding-top padding-bottom">
@@ -132,7 +133,7 @@
                             <div class="movie-area mb-10">
                                 @if (Model == null || Model.Count == 0)
                                 {
-                                    <p>Không có thông tin hiển thị!</p>
+                                    <p>No information displayed!</p>
                                 }
                                 else
                                 {
@@ -141,14 +142,14 @@
                                         <div class="movie-list">
                                             <div class="movie-thumb c-thumb">
                                                 <a href="/movies/detail/@item.MaPhim?cinema=@cinema" class="w-100 bg_img h-100" data-background="@item.HinhAnh">
-                                                    <img class="d-sm-none" src="@item.HinhAnh" alt="movie">
+                                                    <img class="d-sm-none" style="width:auto; height:250px; padding-bottom:10px;" src="@item.HinhAnh" alt="movie">
                                                 </a>
                                             </div>
                                             <div class="movie-content bg-one">
                                                 <h5 class="title">
                                                     <a href="/movies/detail/@item.MaPhim?cinema=@cinema">@item.TenPhim</a>
                                                 </h5>
-                                                <p class="duration">@item.ThoiLuong phút</p>
+                                                <p class="duration">@item.ThoiLuong minute</p>
                                                 <div class="movie-tags">
                                                     @foreach (var theloai in item.TheLoais)
                                                     {
@@ -165,7 +166,7 @@
                                                                 <div class="thumb">
                                                                     <img src="/assets/images/icons/book.png" alt="icons">
                                                                 </div>
-                                                                <span>Đặt vé</span>
+                                                                <span>Book tickets</span>
                                                             </a>
                                                         </div>
                                                         <div class="react-item">
@@ -173,7 +174,7 @@
                                                                 <div class="thumb">
                                                                     <img src="/assets/images/icons/play-button.png" alt="icons">
                                                                 </div>
-                                                                <span>Xem trailer</span>
+                                                                <span>Watch the trailer</span>
                                                             </a>
                                                         </div>
                                                     </div>
@@ -189,5 +190,5 @@
             </div>
         </div>
     </div>
-</section>
+</section> 
 <!-- ==========Movie-Section========== -->

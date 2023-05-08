@@ -9,7 +9,7 @@ namespace WebDatVe.Areas.Admin.Controllers
 {
 
     [AdminAuthorize]
-    [PemisitonAttribute("Thống kê")]
+    [PemisitonAttribute("Statistical")]
     public class ThongKeController : BaseController
     {
         // GET: Admin/ThongKe

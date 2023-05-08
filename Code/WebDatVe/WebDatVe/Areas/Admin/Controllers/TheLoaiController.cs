@@ -10,7 +10,7 @@ using WebDatVe.Models;
 namespace WebDatVe.Areas.Admin.Controllers
 {
     [AdminAuthorize]
-    [PemisitonAttribute("Thể loại")]
+    [PemisitonAttribute("Category")]
     public class TheLoaiController : BaseController
     {
         // GET: Admin/TheLoai

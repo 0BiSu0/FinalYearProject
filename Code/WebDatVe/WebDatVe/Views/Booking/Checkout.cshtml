@@ -28,7 +28,7 @@
             <div class="details-banner-content style-two">
                 <h3 class="title">@Model.LichChieu.Phim.TenPhim</h3>
                 <div class="tags">
-                    <a href="javascript:;">Rạp: @Model.LichChieu.Rap.TenRap</a>
+                    <a href="javascript:;">Cinema: @Model.LichChieu.Rap.TenRap</a>
                     <a href="javascript:;">@ConfigData.DSLoaiChieuPhim.FirstOrDefault(x => x.Key == Model.LoaiChieuPhim).Value</a>
                 </div>
             </div>
@@ -42,7 +42,7 @@
         <div class="page-title-area">
             <div class="item md-order-1">
                 <a href="/booking?movies=@ViewBag.movies&cinema=@ViewBag.cinema" class="custom-button back-button">
-                    <i class="flaticon-double-right-arrows-angles"></i>Quay lại
+                    <i class="flaticon-double-right-arrows-angles"></i>Come back
                 </a>
             </div>
             <div class="item date-item">
@@ -53,7 +53,7 @@
             </div>
             <div class="item">
                 <h5 class="title">05:00</h5>
-                <p>Thời gian hết hạn</p>
+                <p>Expired time</p>
             </div>
         </div>
     </div>
@@ -65,10 +65,10 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="checkout-widget checkout-contact">
-                    <h5 class="title">Thông tin người đặt </h5>
+                    <h5 class="title">Booking information </h5>
                     <div class="checkout-contact-form">
                         <div class="form-group">
-                            Họ tên:
+                            Full name:
                             <input type="text" value="@khachhang.HoTen" readonly>
                         </div>
                         <div class="form-group">
@@ -76,32 +76,32 @@
                             <input type="text" value="@khachhang.Email" readonly>
                         </div>
                         <div class="form-group">
-                            SĐT:
+                            Phone Number:
                             <input type="text" value="@khachhang.SoDienThoai" readonly>
                         </div>
                     </div>
                 </div>
                 <div class="checkout-widget checkout-card mb-0">
                     <h5 class="title">
-                        Phương thức thanh toán
+                        Payment methods
                     </h5>
                     <ul class="payment-option">
                         <li class="ccdd ccdd_1 active" onclick="choncard(1);">
                             <a href="javascript:;">
                                 <img src="/assets/images/payment/card.png" alt="payment">
-                                <span>Thẻ ATM</span>
+                                <span>ATM Card</span>
                             </a>
                         </li>
                         <li class="ccdd ccdd_2" onclick="choncard(2);">
                             <a href="javascript:;">
                                 <img src="/assets/images/payment/card.png" alt="payment">
-                                <span>Thẻ tín dụng</span>
+                                <span>Credit Card</span>
                             </a>
                         </li>
                         <li class="ccdd ccdd_3" onclick="choncard(3);">
                             <a href="javascript:;">
                                 <img src="/assets/images/payment/paypal.png" alt="payment">
-                                <span>paypal</span>
+                                <span>Paypal</span>
                             </a>
                         </li>
                     </ul>
@@ -116,13 +116,13 @@
                         </div>
                     </form>
                     <p class="notice">
-                        Bằng cách nhấp vào "Thanh toán", bạn đồng ý với <a href="/home/termsofuse" target="_blank">Các điều khoản và điều kiện</a>
+                        By clicking "Checkout", you agree to <a href="/home/termsofuse" target="_blank">Terms and conditions</a>
                     </p>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="booking-summery bg-one">
-                    <h4 class="title">Thanh toán</h4>
+                    <h4 class="title">Pay</h4>
                     <ul>
                         <li>
                             <h6 class="subtitle">@Model.LichChieu.Phim.TenPhim</h6>
@@ -130,10 +130,10 @@
                         </li>
                         <li>
                             <h6 class="subtitle"><span>Rạp: @Model.LichChieu.Rap.TenRap</span><span>@ViewBag.count</span></h6>
-                            <div class="info"><span>@Model.LichChieu.NgayChieu.ToString("dd/MM/yyyy"), @Model.GioChieu.ToString("00"):@Model.PhutChieu.ToString("00")</span> <span>Vé</span></div>
+                            <div class="info"><span>@Model.LichChieu.NgayChieu.ToString("dd/MM/yyyy"), @Model.GioChieu.ToString("00"):@Model.PhutChieu.ToString("00")</span> <span>Tickets</span></div>
                         </li>
                         <li>
-                            <h6 class="subtitle mb-0"><span>Tiền vé</span><span>@ViewBag.tienve đ</span></h6>
+                            <h6 class="subtitle mb-0"><span>Tickets</span><span>@ViewBag.tienve đ</span></h6>
                         </li>
                     </ul>
                     <ul class="side-shape">
@@ -147,11 +147,11 @@
                     </ul>
                 </div>
                 <div class="proceed-area  text-center">
-                    <h6 class="subtitle"><span>Tổng tiền</span><span>@ViewBag.tongtien đ</span></h6>
+                    <h6 class="subtitle"><span>Total amount</span><span>@ViewBag.tongtien đ</span></h6>
                 </div>
                 <div class="note">
-                    <h5 class="title">Ghi chú: </h5>
-                    <p>Vui lòng cho chúng tôi 15 phút để chuẩn bị F&B khi bạn đến rạp chiếu phim</p>
+                    <h5 class="title">Note: </h5>
+                    <p>Please give us 15 minutes to prepare the F&B when you arrive at the cinema</p>
                 </div>
             </div>
         </div>
